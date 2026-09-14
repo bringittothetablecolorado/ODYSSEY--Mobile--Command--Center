@@ -515,6 +515,62 @@ button {
   display: block;
 }
 
+.capture-form {
+  display: grid;
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.capture-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--gold-soft);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.capture-form input,
+.capture-form textarea,
+.capture-form select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(205, 176, 101, 0.34);
+  border-radius: 10px;
+  background: rgba(4, 15, 29, 0.84);
+  color: var(--text);
+  padding: 12px;
+  font: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.capture-form textarea {
+  resize: vertical;
+}
+
+.capture-row,
+.intelligence-row {
+  border-top: 1px solid rgba(205, 176, 101, 0.18);
+  margin-top: 14px;
+  padding-top: 14px;
+}
+
+.source-link {
+  color: var(--gold-soft);
+  text-decoration: none;
+}
+
+.source-link:hover,
+.source-link:focus {
+  text-decoration: underline;
+}
+
+.live-feed-card .detail-nav-button {
+  margin-top: 14px;
+}
+
 .intake-option-title {
   color: var(--white);
   font-size: 15px;
