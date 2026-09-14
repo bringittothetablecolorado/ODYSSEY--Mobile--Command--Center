@@ -1,14 +1,13 @@
 {
   "name": "ODYSSEY",
   "short_name": "ODYSSEY",
-  "description": "A Story Told in Real Time — Mobile Command Center",
+  "description": "A Story Told in Real Time",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#071322",
   "theme_color": "#071322",
-  "categories": ["productivity", "news"],
   "icons": [
     {
       "src": "assets/odyssey-hero.png",

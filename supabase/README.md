@@ -1,9 +1,12 @@
-# Secure mobile intake bridge
+# ODYSSEY private recovery connection
 
-The migration creates one authenticated table for cross-device phone intake.
-Row-level security limits each signed-in user to their own records. There is no
-delete policy and no anonymous access.
+The migrations reconnect the preserved Command Center to:
 
-The migration is ready to apply after the Supabase project is selected. The PWA
-must then receive the project's public URL and public anon/publishable key;
-service-role keys and private documents must never be placed in this repository.
+- the recovered read-only workspace state;
+- authoritative executive memory;
+- private document-record links;
+- private source monitoring and story updates; and
+- authenticated phone intake.
+
+All exposed tables use row-level security. The browser contains only the
+Supabase publishable key. Service credentials remain inside Supabase.

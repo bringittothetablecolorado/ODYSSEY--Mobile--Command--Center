@@ -40,6 +40,60 @@ button {
   font: inherit;
 }
 
+.connection-screen {
+  width: min(100%, 480px);
+  margin: 0 auto;
+  padding: calc(34px + env(safe-area-inset-top)) 20px 32px;
+}
+
+.connection-form label,
+.connection-form input {
+  display: block;
+  width: 100%;
+}
+
+.connection-form label {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.connection-form input {
+  margin-top: 7px;
+  border: 1px solid rgba(212, 175, 55, 0.34);
+  border-radius: 12px;
+  padding: 13px;
+  color: var(--white);
+  background: var(--midnight);
+}
+
+.connection-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.secondary-button {
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: 999px;
+  padding: 13px 18px;
+  color: var(--soft-gold);
+  background: transparent;
+}
+
+.record-link {
+  display: block;
+  margin-top: 12px;
+  border-top: 1px solid rgba(212, 175, 55, 0.14);
+  padding-top: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.record-link span {
+  display: block;
+}
+
 .app-shell {
   min-height: 100vh;
   min-height: 100dvh;
@@ -513,62 +567,6 @@ button {
 .intake-option-meta,
 .intake-option-type {
   display: block;
-}
-
-.capture-form {
-  display: grid;
-  gap: 14px;
-  margin: 16px 0;
-}
-
-.capture-form label {
-  display: grid;
-  gap: 7px;
-  color: var(--gold-soft);
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.capture-form input,
-.capture-form textarea,
-.capture-form select {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid rgba(205, 176, 101, 0.34);
-  border-radius: 10px;
-  background: rgba(4, 15, 29, 0.84);
-  color: var(--text);
-  padding: 12px;
-  font: inherit;
-  text-transform: none;
-  letter-spacing: normal;
-}
-
-.capture-form textarea {
-  resize: vertical;
-}
-
-.capture-row,
-.intelligence-row {
-  border-top: 1px solid rgba(205, 176, 101, 0.18);
-  margin-top: 14px;
-  padding-top: 14px;
-}
-
-.source-link {
-  color: var(--gold-soft);
-  text-decoration: none;
-}
-
-.source-link:hover,
-.source-link:focus {
-  text-decoration: underline;
-}
-
-.live-feed-card .detail-nav-button {
-  margin-top: 14px;
 }
 
 .intake-option-title {

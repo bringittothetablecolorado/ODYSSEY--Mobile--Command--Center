@@ -1,11 +1,11 @@
-var CACHE_NAME = "odyssey-pwa-v1-phone-safe-20260914-1";
-var LIVE_FEED_URL = "./data/intelligence-feed.json";
+var CACHE_NAME = "odyssey-pwa-v1-original-recovery-20260914";
 
 var APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css?v=1.1.1",
-  "./app.js?v=1.1.1",
+  "./styles.css",
+  "./odyssey-connection.js",
+  "./app.js",
   "./manifest.json",
   "./assets/odyssey-hero.png"
 ];
@@ -36,21 +36,6 @@ self.addEventListener("activate", function(event) {
 
 self.addEventListener("fetch", function(event) {
   if (event.request.method !== "GET") {
-    return;
-  }
-
-  if (event.request.url.indexOf("/data/intelligence-feed.json") !== -1) {
-    event.respondWith(
-      fetch(event.request).then(function(response) {
-        var copy = response.clone();
-        caches.open(CACHE_NAME).then(function(cache) {
-          cache.put(LIVE_FEED_URL, copy);
-        });
-        return response;
-      })["catch"](function() {
-        return caches.match(LIVE_FEED_URL);
-      })
-    );
     return;
   }
 

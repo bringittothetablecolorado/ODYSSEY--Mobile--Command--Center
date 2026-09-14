@@ -1,10 +1,24 @@
-# ODYSSEY Mobile Command Center
+# ODYSSEY Command Center
 
-An installable mobile companion for **ODYSSEY: A Story Told in Real Time**.
+Recovered from the preserved `Odyssey -iphone2.zip` baseline.
 
-The desktop Command Center remains the protected master-data system. This PWA
-provides phone-ready mission review, a verified public-source directory, and a
-safe local intake queue while authenticated cross-device sync is completed.
+The original Command Center interface, mission hierarchy, navigation, War Room,
+Timeline, Evidence, Commander, Intelligence, Story, Legacy, and mobile intake
+screens remain the product. MISSION-001 remains Priority 1 / RED.
+
+Supabase supplies the private recovered workspace, executive memory, connected
+record index, source monitoring, story updates, and supporting mobile intake.
+The public GitHub Pages source contains no private document bytes or service
+credentials.
+
+## Verify the recovery
+
+```bash
+node scripts/verify-recovery.mjs
+node --check app.js
+node --check odyssey-connection.js
+git diff --check
+```
 
 ## Local preview
 
@@ -12,6 +26,7 @@ safe local intake queue while authenticated cross-device sync is completed.
 python3 -m http.server 8080
 ```
 
-Open `http://localhost:8080` in a browser.
+Open `http://localhost:8080`.
 
-See `docs/ACTIVE_ROADMAP.md` for the active scope and safety boundary.
+The incomplete recovery draft from commit `9e156b7` is not a baseline for
+this branch.
