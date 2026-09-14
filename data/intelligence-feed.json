@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-09-14T00:00:00Z",
+  "source_count": 7,
+  "healthy_source_count": 7,
+  "limited_source_count": 0,
+  "item_count": 7,
+  "sources": [
+    {"name":"OdysseyRealtime.com","status":"verified","items":1,"checked_at":"2026-09-14T00:00:00Z"},
+    {"name":"Socrates Ulysses Packer","status":"verified","items":1,"checked_at":"2026-09-14T00:00:00Z"},
+    {"name":"Medium","status":"verified","items":1,"checked_at":"2026-09-14T00:00:00Z"},
+    {"name":"YouTube","status":"verified","items":1,"checked_at":"2026-09-14T00:00:00Z"},
+    {"name":"FilmFreeway","status":"verified","items":1,"checked_at":"2026-09-14T00:00:00Z"},
+    {"name":"IMDb","status":"verified","items":1,"checked_at":"2026-09-14T00:00:00Z"},
+    {"name":"Fractured Atlas","status":"verified","items":1,"checked_at":"2026-09-14T00:00:00Z"}
+  ],
+  "items": [
+    {"source_name":"OdysseyRealtime.com","title":"ODYSSEY — A Story Told in Real Time","url":"https://odysseyrealtime.com/","mission":"MISSION-002","status":"VERIFIED_SOURCE","published_at":null,"discovered_at":"2026-09-14T00:00:00Z","summary":"Official ODYSSEY website."},
+    {"source_name":"Socrates Ulysses Packer","title":"Socrates Ulysses Packer","url":"https://www.google.com/search?q=%22Socrates+Ulysses+Packer%22","mission":"MISSION-002","status":"VERIFIED_IDENTITY","published_at":null,"discovered_at":"2026-09-14T00:00:00Z","summary":"Public identity search entry point."},
+    {"source_name":"Medium","title":"Socrates Ulysses Packer on Medium","url":"https://medium.com/@SocratesUlyssesPacker","mission":"MISSION-004","status":"VERIFIED_SOURCE","published_at":null,"discovered_at":"2026-09-14T00:00:00Z","summary":"Public writing profile."},
+    {"source_name":"YouTube","title":"Bring It to the Table Colorado","url":"https://www.youtube.com/channel/UC_8_BMCwZEHjU9sNw9R9hCg","mission":"MISSION-004","status":"VERIFIED_SOURCE","published_at":null,"discovered_at":"2026-09-14T00:00:00Z","summary":"Public video channel."},
+    {"source_name":"FilmFreeway","title":"Socrates Ulysses Packer on FilmFreeway","url":"https://filmfreeway.com/SocratesUlyssesPacker","mission":"MISSION-002","status":"VERIFIED_SOURCE","published_at":null,"discovered_at":"2026-09-14T00:00:00Z","summary":"Public filmmaker profile."},
+    {"source_name":"IMDb","title":"Socrates Ulysses Packer on IMDb","url":"https://www.imdb.com/name/nm17899738/","mission":"MISSION-002","status":"VERIFIED_SOURCE","published_at":null,"discovered_at":"2026-09-14T00:00:00Z","summary":"Public IMDb name page."},
+    {"source_name":"Fractured Atlas","title":"ODYSSEY — A Story Told in Real Time","url":"https://fundraising.fracturedatlas.org/odyssey-a-story-told-in-real-time/general_support","mission":"MISSION-003","status":"VERIFIED_SOURCE","published_at":null,"discovered_at":"2026-09-14T00:00:00Z","summary":"Public fiscal-sponsorship support page."}
+  ]
+}

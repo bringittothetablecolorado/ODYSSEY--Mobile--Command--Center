@@ -1,4 +1,5 @@
-var CACHE_NAME = "odyssey-pwa-v1-commander-brief-20260615";
+var CACHE_NAME = "odyssey-pwa-v1-live-intelligence-20260914";
+var LIVE_FEED_URL = "./data/intelligence-feed.json";
 
 var APP_SHELL = [
   "./",
@@ -35,6 +36,21 @@ self.addEventListener("activate", function(event) {
 
 self.addEventListener("fetch", function(event) {
   if (event.request.method !== "GET") {
+    return;
+  }
+
+  if (event.request.url.indexOf("/data/intelligence-feed.json") !== -1) {
+    event.respondWith(
+      fetch(event.request).then(function(response) {
+        var copy = response.clone();
+        caches.open(CACHE_NAME).then(function(cache) {
+          cache.put(LIVE_FEED_URL, copy);
+        });
+        return response;
+      })["catch"](function() {
+        return caches.match(LIVE_FEED_URL);
+      })
+    );
     return;
   }
 
