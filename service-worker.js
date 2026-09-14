@@ -1,11 +1,11 @@
-var CACHE_NAME = "odyssey-pwa-v1-live-intelligence-20260914";
+var CACHE_NAME = "odyssey-pwa-v1-phone-safe-20260914-1";
 var LIVE_FEED_URL = "./data/intelligence-feed.json";
 
 var APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css",
-  "./app.js",
+  "./styles.css?v=1.1.1",
+  "./app.js?v=1.1.1",
   "./manifest.json",
   "./assets/odyssey-hero.png"
 ];
